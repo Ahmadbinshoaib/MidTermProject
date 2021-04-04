@@ -614,6 +614,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="EXIT"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton12MouseClicked"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -1140,6 +1143,9 @@
                     </Property>
                     <Property name="text" type="java.lang.String" value="EXIT"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton4MouseClicked"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
