@@ -18,6 +18,19 @@ public class driver {
         // TODO code application logic here
         MainPage a= new MainPage();
         a.setVisible(true);
+        
+        Person b= new Person();
+        if(b.setPhoneNumber("0309802164a"))
+        {
+            System.out.println("Okay");
+            
+        }
+        else
+        {
+           System.out.println("NOkay"); 
+        }
+        
+        
     }
     
 }
