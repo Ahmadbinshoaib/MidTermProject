@@ -5,6 +5,10 @@
  */
 package ProcurementManagementSystem;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.*;
+
 /**
  *
  * @author Maria
@@ -19,17 +23,8 @@ public class driver {
         MainPage a= new MainPage();
         a.setVisible(true);
         
-        Person b= new Person();
-        if(b.setPhoneNumber("0309802164a"))
-        {
-            System.out.println("Okay");
-            
-        }
-        else
-        {
-           System.out.println("NOkay"); 
-        }
         
+       
         
     }
     

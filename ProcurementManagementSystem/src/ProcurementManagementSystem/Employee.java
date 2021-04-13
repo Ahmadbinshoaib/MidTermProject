@@ -9,7 +9,7 @@ package ProcurementManagementSystem;
  *
  * @author Maria
  */
-public class Employee {
+public class Employee extends Person {
     private String Designation;
     private String EmployeeID;
     private String Username;
