@@ -1,0 +1,4 @@
+Pencil, Picasso,30,16,Returnable
+Laptop, Dell,12000,2,Returnable
+StickyNotes, null,1200,20,Non-Returnable
+BoardMarker, Dollar,130,2,Non-Returnable

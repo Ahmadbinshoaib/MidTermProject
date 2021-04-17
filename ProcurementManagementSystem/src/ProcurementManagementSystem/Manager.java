@@ -5,14 +5,35 @@
  */
 package ProcurementManagementSystem;
 
+import static ProcurementManagementSystem.Studio.instance;
+import java.util.ArrayList;
+
 /**
  *
  * @author Maria
  */
 public class Manager extends Person{
     
+    static Manager instance;
+    static Manager a= new Manager();
+    
     private String Username;
     private String Password;
+    
+    private Manager()
+    {
+        this.Username=Username;
+        this.Password=Password;
+    }
+    
+     public static Manager getInstance(){
+        if(instance==null)
+        {
+            instance = new Manager();
+        }
+        
+        return instance;
+    }
 
     
      /**

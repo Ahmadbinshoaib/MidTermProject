@@ -69,11 +69,33 @@ public class Person {
     /**
      * @param Email the Email to set
      */
-    public boolean setEmail(String Email) {
-          boolean flag= false;
-        this.Email=Email;
-        return true;
-    }
+    public  boolean setEmail(String Email){
+        boolean test=true;
+        int index = 0;
+        char[] ch = new char[Email.length()];
+        
+        if (ch[0] == '@') {
+            test= false;
+        } else {
+            for (int i = 1; i < Email.length(); i++) {
+                if (ch[i] == '@') {
+                    index = i;
+                    break;
+                }
+            }
+            if (ch[index] == '.') {
+               test = false;
+            }
+        }
+        if (test== true) {
+            this.Email = Email;
+            return true;
+            
+        } else {
+           return false;
+
+        }
+}
 
     /**
      * @return the phoneNumber

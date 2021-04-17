@@ -221,14 +221,15 @@ public class AdminLogin extends javax.swing.JFrame {
 
     private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
         // TODO add your handling code here:
-        
+        dispose();
         String username= user.getText();
         String password= pass.getText();
         
         if(username.equals("admin098") && password.equals("admin098"))
-        {
+        { 
+          
           JOptionPane.showMessageDialog(this, "Credentials are Correct!");
-          dispose();
+          
           Admin1 a= new Admin1();
           a.setVisible(true);
           dispose();
